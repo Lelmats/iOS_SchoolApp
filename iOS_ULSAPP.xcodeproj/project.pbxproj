@@ -15,6 +15,13 @@
 		3D33769A290AD5E500054022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D337698290AD5E500054022 /* LaunchScreen.storyboard */; };
 		3D3376A5290AD5E500054022 /* iOS_ULSAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3376A4290AD5E500054022 /* iOS_ULSAPPTests.swift */; };
 		3D3376B0290AD5E500054022 /* iOS_ULSAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3376AF290AD5E500054022 /* iOS_ULSAPPUITests.swift */; };
+		FB451DB8291177A900704948 /* BorisBlackBloxxDirty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB451DB6291177A900704948 /* BorisBlackBloxxDirty.ttf */; };
+		FB451DB9291177A900704948 /* BorisBlackBloxx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB451DB7291177A900704948 /* BorisBlackBloxx.ttf */; };
+		FB451DBC29117BE000704948 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DBB29117BE000704948 /* Menu.swift */; };
+		FB451DBE291182B500704948 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DBD291182B500704948 /* Materia.swift */; };
+		FB451DC0291182C500704948 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DBF291182C500704948 /* Alumno.swift */; };
+		FB451DC2291182D400704948 /* ContactoEmergencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DC1291182D400704948 /* ContactoEmergencia.swift */; };
+		FB451DC4291182EB00704948 /* Pago.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DC3291182EB00704948 /* Pago.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		3D3376AB290AD5E500054022 /* iOS_ULSAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_ULSAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3376AF290AD5E500054022 /* iOS_ULSAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ULSAPPUITests.swift; sourceTree = "<group>"; };
 		3D3376B1290AD5E500054022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB451DB6291177A900704948 /* BorisBlackBloxxDirty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BorisBlackBloxxDirty.ttf; sourceTree = "<group>"; };
+		FB451DB7291177A900704948 /* BorisBlackBloxx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BorisBlackBloxx.ttf; sourceTree = "<group>"; };
+		FB451DBB29117BE000704948 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FB451DBD291182B500704948 /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		FB451DBF291182C500704948 /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
+		FB451DC1291182D400704948 /* ContactoEmergencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoEmergencia.swift; sourceTree = "<group>"; };
+		FB451DC3291182EB00704948 /* Pago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pago.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +143,11 @@
 		3D3376BD290AD5F200054022 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
+				FB451DBB29117BE000704948 /* Menu.swift */,
+				FB451DBD291182B500704948 /* Materia.swift */,
+				FB451DBF291182C500704948 /* Alumno.swift */,
+				FB451DC1291182D400704948 /* ContactoEmergencia.swift */,
+				FB451DC3291182EB00704948 /* Pago.swift */,
 			);
 			name = Modelos;
 			sourceTree = "<group>";
@@ -163,9 +182,19 @@
 		3D3376C2290AD65700054022 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				FB451DBA291177B800704948 /* Fonts */,
 				3D337696290AD5E400054022 /* Assets.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		FB451DBA291177B800704948 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FB451DB7291177A900704948 /* BorisBlackBloxx.ttf */,
+				FB451DB6291177A900704948 /* BorisBlackBloxxDirty.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D33769A290AD5E500054022 /* LaunchScreen.storyboard in Resources */,
+				FB451DB8291177A900704948 /* BorisBlackBloxxDirty.ttf in Resources */,
+				FB451DB9291177A900704948 /* BorisBlackBloxx.ttf in Resources */,
 				3D337697290AD5E400054022 /* Assets.xcassets in Resources */,
 				3D337695290AD5E300054022 /* Main.storyboard in Resources */,
 			);
@@ -300,7 +331,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D337692290AD5E300054022 /* ViewController.swift in Sources */,
+				FB451DC0291182C500704948 /* Alumno.swift in Sources */,
 				3D33768E290AD5E300054022 /* AppDelegate.swift in Sources */,
+				FB451DBE291182B500704948 /* Materia.swift in Sources */,
+				FB451DC4291182EB00704948 /* Pago.swift in Sources */,
+				FB451DBC29117BE000704948 /* Menu.swift in Sources */,
+				FB451DC2291182D400704948 /* ContactoEmergencia.swift in Sources */,
 				3D337690290AD5E300054022 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
