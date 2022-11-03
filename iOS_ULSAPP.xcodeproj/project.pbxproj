@@ -22,6 +22,8 @@
 		FB451DC0291182C500704948 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DBF291182C500704948 /* Alumno.swift */; };
 		FB451DC2291182D400704948 /* ContactoEmergencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DC1291182D400704948 /* ContactoEmergencia.swift */; };
 		FB451DC4291182EB00704948 /* Pago.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DC3291182EB00704948 /* Pago.swift */; };
+		FBDC295F2914065600A11037 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC295E2914065600A11037 /* MenuController.swift */; };
+		FBDC29622914074700A11037 /* CeldaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC29612914074700A11037 /* CeldaMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		FB451DBF291182C500704948 /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		FB451DC1291182D400704948 /* ContactoEmergencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoEmergencia.swift; sourceTree = "<group>"; };
 		FB451DC3291182EB00704948 /* Pago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pago.swift; sourceTree = "<group>"; };
+		FBDC295E2914065600A11037 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		FBDC29612914074700A11037 /* CeldaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			children = (
 				3D3376BF290AD62500054022 /* Storyboards */,
 				3D3376C0290AD63100054022 /* Controllers */,
+				FBDC29602914072200A11037 /* CeldasController */,
 				3D3376BD290AD5F200054022 /* Modelos */,
 				3D3376C2290AD65700054022 /* Assets */,
 				3D3376C1290AD63C00054022 /* App */,
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				3D337691290AD5E300054022 /* ViewController.swift */,
+				FBDC295E2914065600A11037 /* MenuController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -195,6 +201,14 @@
 				FB451DB6291177A900704948 /* BorisBlackBloxxDirty.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		FBDC29602914072200A11037 /* CeldasController */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC29612914074700A11037 /* CeldaMenuController.swift */,
+			);
+			name = CeldasController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,12 +345,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D337692290AD5E300054022 /* ViewController.swift in Sources */,
+				FBDC295F2914065600A11037 /* MenuController.swift in Sources */,
 				FB451DC0291182C500704948 /* Alumno.swift in Sources */,
 				3D33768E290AD5E300054022 /* AppDelegate.swift in Sources */,
 				FB451DBE291182B500704948 /* Materia.swift in Sources */,
 				FB451DC4291182EB00704948 /* Pago.swift in Sources */,
 				FB451DBC29117BE000704948 /* Menu.swift in Sources */,
 				FB451DC2291182D400704948 /* ContactoEmergencia.swift in Sources */,
+				FBDC29622914074700A11037 /* CeldaMenuController.swift in Sources */,
 				3D337690290AD5E300054022 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
