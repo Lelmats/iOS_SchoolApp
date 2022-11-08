@@ -12,14 +12,17 @@ class Alumno{
     var edad : String
     var celular : String
     var imagen : String
+    var cumpleanos : String
+
     
-    init(nombre : String, matricula : String, wdad : String, celular : String, imagen : String)
+    init(nombre : String, cumpleanos : String, matricula : String, edad : String, celular : String, imagen : String)
     {
         self.nombre = nombre
-        self.matricula = nombre
-        self.edad = nombre
-        self.celular = nombre
-        self.imagen = nombre
+        self.matricula = matricula
+        self.edad = edad
+        self.celular = celular
+        self.imagen = imagen
+        self.cumpleanos = cumpleanos
     }
 
 }

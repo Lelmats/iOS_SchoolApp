@@ -14,7 +14,7 @@ class MenuController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var Menus : [Menu] = []
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 120
     }
     //Nùmero de secciones que tiene mi table view
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -10,12 +10,14 @@ class Materia{
     var nombre : String
     var hora : String
     var maestro : String
-
-    init(nombre : String, hora : String, maestro : String)
+    var frontImg : String
+    
+    init(nombre : String, hora : String, maestro : String, frontImg : String)
     {
         self.nombre = nombre
         self.hora = hora
         self.maestro = maestro
+        self.frontImg = frontImg
     }
 
 }
