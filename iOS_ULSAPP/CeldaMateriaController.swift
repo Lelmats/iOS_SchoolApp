@@ -13,4 +13,5 @@ class CeldaMateriaController: UITableViewCell {
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblHorario: UILabel!
     @IBOutlet weak var imgFrontimg: UIImageView!
+    
 }

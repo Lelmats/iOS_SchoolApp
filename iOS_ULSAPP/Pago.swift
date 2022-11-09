@@ -9,13 +9,16 @@
 class Pago{
     var nombre : String
     var numpago : String
+    var cantidad : String
     var fecha : String
     var fechaLim  : String
     
-    init(nombre : String, numpago : String, fecha : String, fechaLim : String)
+    
+    init(nombre : String, numpago : String, cantidad : String, fecha : String, fechaLim : String)
     {
         self.nombre = nombre
         self.numpago = numpago
+        self.cantidad = cantidad
         self.fecha = fecha
         self.fechaLim = fechaLim
     }

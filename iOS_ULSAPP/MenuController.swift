@@ -34,6 +34,10 @@ class MenuController: UIViewController, UITableViewDelegate, UITableViewDataSour
         celda?.lblPrecio.text = Menus[indexPath.row].precio
         celda?.imgImagen.image = UIImage(named: Menus[indexPath.row].imagen)
         
+        celda?.imgImagen.layer.cornerRadius = 5
+        celda?.imgImagen.clipsToBounds = true
+        celda?.imgImagen.layer.borderWidth = 0
+        celda?.imgImagen.layer.borderColor = UIColor.clear.cgColor
         return celda!
     }
     

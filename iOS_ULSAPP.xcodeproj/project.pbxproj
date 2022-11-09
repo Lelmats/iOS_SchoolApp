@@ -52,6 +52,8 @@
 		FB451DC4291182EB00704948 /* Pago.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB451DC3291182EB00704948 /* Pago.swift */; };
 		FB51B74C2919506100C40FE9 /* CeldaMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51B74B2919506100C40FE9 /* CeldaMateriaController.swift */; };
 		FB51B74E2919574E00C40FE9 /* DetallesMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51B74D2919574E00C40FE9 /* DetallesMateriaController.swift */; };
+		FB7623B1291BF0170030DF96 /* PagoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7623B0291BF0170030DF96 /* PagoController.swift */; };
+		FB7623B3291BF2940030DF96 /* CeldaPagoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7623B2291BF2940030DF96 /* CeldaPagoController.swift */; };
 		FBDC295F2914065600A11037 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC295E2914065600A11037 /* MenuController.swift */; };
 		FBDC29622914074700A11037 /* CeldaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC29612914074700A11037 /* CeldaMenuController.swift */; };
 /* End PBXBuildFile section */
@@ -125,6 +127,8 @@
 		FB451DC3291182EB00704948 /* Pago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pago.swift; sourceTree = "<group>"; };
 		FB51B74B2919506100C40FE9 /* CeldaMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateriaController.swift; sourceTree = "<group>"; };
 		FB51B74D2919574E00C40FE9 /* DetallesMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesMateriaController.swift; sourceTree = "<group>"; };
+		FB7623B0291BF0170030DF96 /* PagoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoController.swift; sourceTree = "<group>"; };
+		FB7623B2291BF2940030DF96 /* CeldaPagoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPagoController.swift; sourceTree = "<group>"; };
 		FBDC295E2914065600A11037 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		FBDC29612914074700A11037 /* CeldaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,6 +236,7 @@
 				3D337691290AD5E300054022 /* MateriaController.swift */,
 				FBDC295E2914065600A11037 /* MenuController.swift */,
 				FB51B74D2919574E00C40FE9 /* DetallesMateriaController.swift */,
+				FB7623B0291BF0170030DF96 /* PagoController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			children = (
 				FB51B74B2919506100C40FE9 /* CeldaMateriaController.swift */,
 				FBDC29612914074700A11037 /* CeldaMenuController.swift */,
+				FB7623B2291BF2940030DF96 /* CeldaPagoController.swift */,
 			);
 			name = CeldasController;
 			sourceTree = "<group>";
@@ -464,11 +470,13 @@
 			files = (
 				3D337692290AD5E300054022 /* MateriaController.swift in Sources */,
 				FBDC295F2914065600A11037 /* MenuController.swift in Sources */,
+				FB7623B1291BF0170030DF96 /* PagoController.swift in Sources */,
 				FB451DC0291182C500704948 /* Alumno.swift in Sources */,
 				3D33768E290AD5E300054022 /* AppDelegate.swift in Sources */,
 				FB51B74C2919506100C40FE9 /* CeldaMateriaController.swift in Sources */,
 				FB451DBE291182B500704948 /* Materia.swift in Sources */,
 				FB451DC4291182EB00704948 /* Pago.swift in Sources */,
+				FB7623B3291BF2940030DF96 /* CeldaPagoController.swift in Sources */,
 				FB51B74E2919574E00C40FE9 /* DetallesMateriaController.swift in Sources */,
 				FB451DBC29117BE000704948 /* Menu.swift in Sources */,
 				FB451DC2291182D400704948 /* ContactoEmergencia.swift in Sources */,

@@ -15,7 +15,7 @@ class MateriaController: UIViewController , UITableViewDelegate, UITableViewData
     var Materias : [Materia] = []
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 165
+        return 190
     }
     //Nùmero de secciones que tiene mi table view
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -34,10 +34,10 @@ class MateriaController: UIViewController , UITableViewDelegate, UITableViewData
         celda?.lblHorario.text = Materias[indexPath.row].hora
         celda?.imgFrontimg.image = UIImage(named: Materias[indexPath.row].frontImg)
 
-        //celda?.imgFrontImg.layer.cornerRadius = 5
-        //celda?.imgFrontImg.clipsToBounds = true
-        //celda?.imgFrontImg.layer.borderWidth = 0
-        //celda?.imgFrontImg.layer.borderColor = UIColor.clear.cgColor
+        celda?.imgFrontimg.layer.cornerRadius = 5
+        celda?.imgFrontimg.clipsToBounds = true
+        celda?.imgFrontimg.layer.borderWidth = 0
+        celda?.imgFrontimg.layer.borderColor = UIColor.clear.cgColor
         
         return celda!
     }
@@ -48,7 +48,9 @@ class MateriaController: UIViewController , UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
         self.title = "Materias"
         
-        Materias.append(Materia(nombre: "Dispositivos", hora: "9:00 AM", maestro: "GOD", frontImg: "PizzaConQueso"))
+        Materias.append(Materia(nombre: "Dispositivos", hora: "9:00 AM", maestro: "Emiliano", frontImg: "PizzaConQueso"))
+        Materias.append(Materia(nombre: "Diosito", hora: "11:00 AM", maestro: "Jorge Diosito", frontImg: "PizzaConQueso"))
+        Materias.append(Materia(nombre: "Mercadotecnia", hora: "1:00 PM", maestro: "Yuri", frontImg: "PizzaConQueso"))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
