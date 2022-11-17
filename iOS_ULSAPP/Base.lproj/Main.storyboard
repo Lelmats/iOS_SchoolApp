@@ -259,7 +259,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bXy-cG-YxO">
-                                                    <rect key="frame" x="363" y="7.9999999999999982" width="37" height="38"/>
+                                                    <rect key="frame" x="363" y="7.9999999999999964" width="37" height="38"/>
                                                     <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="37" id="L8A-9i-F6f"/>
@@ -736,6 +736,7 @@
                         <outlet property="imgFrontimg" destination="UgU-t9-4Ty" id="cWb-48-gd3"/>
                         <outlet property="lblAsistencia" destination="2Wz-ks-ycl" id="JKX-ao-icT"/>
                         <outlet property="lblCalificacion" destination="DaD-jF-iy0" id="Lh6-6s-Nb9"/>
+                        <outlet property="lblFaltas" destination="bKM-t5-n2B" id="gVF-Ms-Ygj"/>
                         <outlet property="lblHorario" destination="ZiA-t1-CNy" id="YQd-Qg-8Kh"/>
                         <outlet property="lblMaestro" destination="Zm3-5e-jMy" id="yNv-6t-7WX"/>
                         <outlet property="lblNombre" destination="GTa-Sq-amZ" id="gTQ-x5-CgJ"/>

@@ -16,6 +16,7 @@ class DetallesMateriaController: UIViewController {
     @IBOutlet weak var lblMaestro: UILabel!
     @IBOutlet weak var btnAsistencia: UIButton!
     @IBOutlet weak var lblCalificacion: UILabel!
+    @IBOutlet weak var lblFaltas: UILabel!
     
     @IBOutlet weak var smEvaluacion: UISegmentedControl!
     @IBOutlet weak var lblAsistencia: UILabel!
@@ -36,6 +37,7 @@ class DetallesMateriaController: UIViewController {
             lblMaestro.text = materia!.maestro
             imgFrontimg.image = UIImage(named: materia!.frontImg)
             lblAsistencia.isHidden = true
+            lblFaltas.text = materia!.faltas
             
             if (materia!.asistencia == true){
                 lblAsistencia.isHidden = false

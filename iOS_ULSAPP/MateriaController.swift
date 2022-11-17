@@ -58,9 +58,9 @@ class MateriaController: UIViewController , UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
         self.title = "Materias"
         
-        Materias.append(Materia(nombre: "Dispositivos", hora: "9:00 AM", maestro: "Emiliano", frontImg: "dispositivos", asistencia: false, evaluacion : 2))
-        Materias.append(Materia(nombre: "Diosito", hora: "11:00 AM", maestro: "Jorge Diosito", frontImg: "diosito", asistencia: false, evaluacion : 2))
-        Materias.append(Materia(nombre: "Mercadotecnia", hora: "1:00 PM", maestro: "Yuri", frontImg: "mercadotecnia", asistencia: false, evaluacion : 2))
+        Materias.append(Materia(nombre: "Dispositivos", hora: "9:00 AM", maestro: "Emiliano", frontImg: "dispositivos", asistencia: false, evaluacion : 2, faltas: "1"))
+        Materias.append(Materia(nombre: "Diosito", hora: "11:00 AM", maestro: "Jorge Diosito", frontImg: "diosito", asistencia: false, evaluacion : 2, faltas: "3"))
+        Materias.append(Materia(nombre: "Mercadotecnia", hora: "1:00 PM", maestro: "Yuri", frontImg: "mercadotecnia", asistencia: false, evaluacion : 2, faltas: "23"))
 
     }
     
