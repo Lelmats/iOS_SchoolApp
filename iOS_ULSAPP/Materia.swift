@@ -11,13 +11,17 @@ class Materia{
     var hora : String
     var maestro : String
     var frontImg : String
+    var asistencia : Bool
+    var evaluacion : Int
     
-    init(nombre : String, hora : String, maestro : String, frontImg : String)
+    init(nombre : String, hora : String, maestro : String, frontImg : String, asistencia : Bool,evaluacion : Int)
     {
         self.nombre = nombre
         self.hora = hora
         self.maestro = maestro
         self.frontImg = frontImg
+        self.asistencia = asistencia
+        self.evaluacion = evaluacion
     }
 
 }

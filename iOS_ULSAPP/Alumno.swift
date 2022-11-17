@@ -13,9 +13,9 @@ class Alumno{
     var celular : String
     var imagen : String
     var cumpleanos : String
-
+    var faltas : String
     
-    init(nombre : String, cumpleanos : String, matricula : String, edad : String, celular : String, imagen : String)
+    init(nombre : String, cumpleanos : String, matricula : String, edad : String, celular : String, imagen : String, faltas : String)
     {
         self.nombre = nombre
         self.matricula = matricula
@@ -23,6 +23,7 @@ class Alumno{
         self.celular = celular
         self.imagen = imagen
         self.cumpleanos = cumpleanos
+        self.faltas = faltas
     }
 
 }

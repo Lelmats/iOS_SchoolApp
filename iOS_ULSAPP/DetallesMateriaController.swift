@@ -20,13 +20,12 @@ class DetallesMateriaController: UIViewController {
     @IBOutlet weak var smEvaluacion: UISegmentedControl!
     @IBOutlet weak var lblAsistencia: UILabel!
     
-    
     var materia : Materia?
-    
+    var callbackUpdate: (() -> Void)?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblAsistencia.isHidden = true
-        
+
         self.title = "Detalles de Materia"
         
         if materia != nil {
@@ -36,7 +35,15 @@ class DetallesMateriaController: UIViewController {
             lblHorario.text = materia!.hora
             lblMaestro.text = materia!.maestro
             imgFrontimg.image = UIImage(named: materia!.frontImg)
+            lblAsistencia.isHidden = true
             
+            if (materia!.asistencia == true){
+                lblAsistencia.isHidden = false
+                btnAsistencia.isEnabled = false;
+            }
+            
+            lblCalificacion.text = "XXX"
+            smEvaluacion.selectedSegmentIndex = materia!.evaluacion
             //imgFrontImg.layer.cornerRadius = 5
             //imgFrontImg.clipsToBounds = true
             //imgFrontImg.layer.borderWidth = 2
@@ -45,26 +52,43 @@ class DetallesMateriaController: UIViewController {
         else {
             self.title = "No encontrado"
         }
+
     }
     
     @IBAction func onTapAsistencia(_ sender: Any) {
+        if callbackUpdate != nil {
+            materia?.asistencia = true
+            callbackUpdate!()
+            self.navigationController?.popViewController(animated:  true)
+        }
         lblAsistencia.isHidden = false
-        
+        materia?.asistencia = true
+        btnAsistencia.isEnabled = false;
     }
     
     @IBAction func indexChanged(_ sender: Any) {
         switch smEvaluacion.selectedSegmentIndex
         {
         case 0:
+            materia?.evaluacion = smEvaluacion.selectedSegmentIndex
+            smEvaluacion.isEnabled = false
             lblCalificacion.text = "Malo"
         case 1:
+            materia?.evaluacion = smEvaluacion.selectedSegmentIndex
+            smEvaluacion.isEnabled = false
             lblCalificacion.text = "Meh"
         case 2:
+            materia?.evaluacion = smEvaluacion.selectedSegmentIndex
+            smEvaluacion.isEnabled = false
             lblCalificacion.text = "Medio"
         case 3:
+            materia?.evaluacion = smEvaluacion.selectedSegmentIndex
+            smEvaluacion.isEnabled = false
             lblCalificacion.text = "Bien"
         case 4:
-            lblCalificacion.text = "GOD"
+            materia?.evaluacion = smEvaluacion.selectedSegmentIndex
+            smEvaluacion.isEnabled = false
+            lblCalificacion.text = "Excelente"
         default:
             break
         }

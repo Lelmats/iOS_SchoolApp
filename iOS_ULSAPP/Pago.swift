@@ -12,15 +12,16 @@ class Pago{
     var cantidad : String
     var fecha : String
     var fechaLim  : String
+    var pagado : Bool
     
-    
-    init(nombre : String, numpago : String, cantidad : String, fecha : String, fechaLim : String)
+    init(nombre : String, numpago : String, cantidad : String, fecha : String, fechaLim : String, pagado : Bool)
     {
         self.nombre = nombre
         self.numpago = numpago
         self.cantidad = cantidad
         self.fecha = fecha
         self.fechaLim = fechaLim
+        self.pagado = pagado
     }
 
 }

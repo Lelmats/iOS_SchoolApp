@@ -10,12 +10,12 @@ import UIKit
 
 class CeldaPagoController: UITableViewCell {
 
-
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblFechaI: UILabel!
     @IBOutlet weak var lblFechaF: UILabel!
     @IBOutlet weak var lblNum: UILabel!
     @IBOutlet weak var lblCantidad: UILabel!
     
+    @IBOutlet weak var imgChecker: UIImageView!
     
 }

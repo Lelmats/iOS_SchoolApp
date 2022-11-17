@@ -46,12 +46,12 @@ class MenuController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // Do any additional setup after loading the view.
         Menus.append(Menu(nombre: "Pizza con queso", descripcion: "Deliciosa Pizza con quesito mmmmmmmh", precio: "$25", imagen: "PizzaConQueso"))
-        Menus.append(Menu(nombre: "Cheez Burger", descripcion: "Clasica Habmurguesa con queso", precio: "$55", imagen: "PizzaConQueso"))
-        Menus.append(Menu(nombre: "Pizza Burger", descripcion: "A quien no le gusta la Pizza y la hamburguesa??", precio: "$65", imagen: "PizzaConQueso"))
-        Menus.append(Menu(nombre: "God Burger", descripcion: "Ta buena como un Dios!", precio: "$80", imagen: "PizzaConQueso"))
-        Menus.append(Menu(nombre: "Huevo con jamon", descripcion: "Un desayuno honesto y sencillo", precio: "$35", imagen: "PizzaConQueso"))
-        Menus.append(Menu(nombre: "Molletes", descripcion: "Unos clasicos melletones con queso, hechos con el amor de la cocinera", precio: "$35", imagen: "PizzaConQueso"))
-        Menus.append(Menu(nombre: "Pan dulce", descripcion: "Deliciosa Pizza con quesito mmmmmmmh", precio: "$13", imagen: "PizzaConQueso"))
+        Menus.append(Menu(nombre: "Cheez Burger", descripcion: "Clasica Hamburguesa con queso", precio: "$55", imagen: "hamburgesaChezz"))
+        Menus.append(Menu(nombre: "Pizza Burger", descripcion: "A quien no le gusta la Pizza y la hamburguesa??", precio: "$65", imagen: "BurgerPizza"))
+        Menus.append(Menu(nombre: "God Burger", descripcion: "Ta buena como un Dios!", precio: "$80", imagen: "hamburguesagod"))
+        Menus.append(Menu(nombre: "Huevo con jamon", descripcion: "Un desayuno honesto y sencillo", precio: "$35", imagen: "huevo"))
+        Menus.append(Menu(nombre: "Molletes", descripcion: "Unos clasicos molletones con queso, hechos con el amor de la cocinera", precio: "$35", imagen: "molletes"))
+        Menus.append(Menu(nombre: "Pan dulce", descripcion: "De postre un panecito pa empujar", precio: "$13", imagen: "pan"))
 
         
         tvMenu.reloadData()

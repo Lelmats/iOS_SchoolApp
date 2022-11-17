@@ -10,10 +10,12 @@ import UIKit
 
 class MateriaController: UIViewController , UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var tvMaterias: UITableView!
-    
-    var Materias : [Materia] = []
+    //var DetMatCon : DetallesMateriaController?
 
+    @IBOutlet weak var tvMaterias: UITableView!
+
+    var Materias : [Materia] = []
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 190
     }
@@ -39,25 +41,39 @@ class MateriaController: UIViewController , UITableViewDelegate, UITableViewData
         celda?.imgFrontimg.layer.borderWidth = 0
         celda?.imgFrontimg.layer.borderColor = UIColor.clear.cgColor
         
+        if (Materias[indexPath.row].asistencia == true)
+        {
+            celda?.imgAsistenciaCon.tintColor = UIColor(red: 0, green: 1, blue: 0.5, alpha: 1)
+        }
+        else {
+            celda?.imgAsistenciaCon.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+        }
+        
         return celda!
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "Materias"
         
-        Materias.append(Materia(nombre: "Dispositivos", hora: "9:00 AM", maestro: "Emiliano", frontImg: "PizzaConQueso"))
-        Materias.append(Materia(nombre: "Diosito", hora: "11:00 AM", maestro: "Jorge Diosito", frontImg: "PizzaConQueso"))
-        Materias.append(Materia(nombre: "Mercadotecnia", hora: "1:00 PM", maestro: "Yuri", frontImg: "PizzaConQueso"))
+        Materias.append(Materia(nombre: "Dispositivos", hora: "9:00 AM", maestro: "Emiliano", frontImg: "dispositivos", asistencia: false, evaluacion : 2))
+        Materias.append(Materia(nombre: "Diosito", hora: "11:00 AM", maestro: "Jorge Diosito", frontImg: "diosito", asistencia: false, evaluacion : 2))
+        Materias.append(Materia(nombre: "Mercadotecnia", hora: "1:00 PM", maestro: "Yuri", frontImg: "mercadotecnia", asistencia: false, evaluacion : 2))
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         let destino = segue.destination as! DetallesMateriaController
         destino.materia = Materias[tvMaterias.indexPathForSelectedRow!.row]
+        destino.callbackUpdate = checado
     }
-
+    
+    func checado(){
+        tvMaterias.reloadData()
+    }
+    
 }
 
